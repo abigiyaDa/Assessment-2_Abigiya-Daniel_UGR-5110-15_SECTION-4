@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.green{
+    color: rgb(63, 191, 63);
+}
+.orange{
+    color: rgb(219, 145, 7);
+}
+.header{
+    background-color: rgb(40, 28, 28);
+    color: white;
+    padding: 10px ;
+}
+.header .container{
+    width: 70%;
+    margin: auto;
+}
+.header-container{
+    display: inline-block;
+}
+.header-container h1{
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.header-container>p{
+    margin: 0 20px;
+    text-align: end;
+    margin-top: 20px;
+}
+
+.nav ul{
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 10px;  
+    
+}
+.header .nav ul li {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(63, 191, 63);
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav ul li:hover{
+    padding: 6px;
+    background-color: rgb(219, 145, 7);
+}
+/* main */
+main{
+    display: grid;
+    grid-template:  auto / 1fr 0.5fr;
+    gap: 10px;
+    width: 70%;
+    margin: 10px auto;
+    
+}
+.contact ,.send-email-container,.sidebar{
+    margin: 10px 0px;
+    padding: 5px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.contact,.send-email-container{
+    padding: 20px 0;
+}
+h2,p{
+    margin-bottom: 15px;
+}
+li{
+    list-style: none;
+}
+.send-email-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.send-email-container form p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.send-email-container form input,
+.send-email-container form textarea{
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-email-container form button {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(63, 191, 63);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.send-email-container button:hover {
+    background-color: rgb(219, 145, 7); /* Orange hover effect */
+}
+.sidebar ul li{
+    margin-bottom: 10px;
+}
+
+/* footer */
+.footer{
+    background-color: rgb(40, 28, 28) ;
+    color: white;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 70%;
+    margin: auto;
+}
+.footer img{
+    border: 2px solid white;
+    float: left;
+    margin: 5px 8px;
+    width: 50px;
+    height: 50px;
+}
+.images{
+    display: inline-block;
+}
+.containers{
+    width: 250px;
+}
+/* footer2 */
+.footer-container-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+@media (max-width:890px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 5px;
+        
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .footer .containers{
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        border: 1px solid rgb(96, 94, 94);
+    }
+    .footer-container-2{
+        flex-direction: column;
+        margin: auto;
+        width:80%;
+        gap: 30px;
+        
+    }
+    .footer-container-2 .nav{
+        align-self: center;
+    }
+}
